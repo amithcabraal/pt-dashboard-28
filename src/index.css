@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --status-red-bg: #fecaca;
+  --status-red-text: #7f1d1d;
+  --status-amber-bg: #fef08a;
+  --status-amber-text: #713f12;
+  --status-green-bg: #bbf7d0;
+  --status-green-text: #14532d;
+  --status-neutral-bg: #e5e7eb;
+  --status-neutral-text: #374151;
+  --progress-low-bg: #ef4444;
+  --progress-low-text: #ffffff;
+  --progress-medium-bg: #eab308;
+  --progress-medium-text: #ffffff;
+  --progress-high-bg: #22c55e;
+  --progress-high-text: #ffffff;
+  --execution-bg: #14b8a6;
+  --execution-text: #ffffff;
+}
+
+.status-red { 
+  background-color: var(--status-red-bg);
+  color: var(--status-red-text);
+}
+.status-amber { 
+  background-color: var(--status-amber-bg);
+  color: var(--status-amber-text);
+}
+.status-green { 
+  background-color: var(--status-green-bg);
+  color: var(--status-green-text);
+}
+.status-neutral { 
+  background-color: var(--status-neutral-bg);
+  color: var(--status-neutral-text);
+}
+.progress-low { 
+  background-color: var(--progress-low-bg);
+  color: var(--progress-low-text);
+}
+.progress-medium { 
+  background-color: var(--progress-medium-bg);
+  color: var(--progress-medium-text);
+}
+.progress-high { 
+  background-color: var(--progress-high-bg);
+  color: var(--progress-high-text);
+}
+.execution-bar { 
+  background-color: var(--execution-bg);
+  color: var(--execution-text);
+}
+
+/* Screenshot mode styles */
+.screenshot-mode .screenshot-hide {
+  display: none !important;
+}
+
+/* Additional screenshot mode styles */
+body.screenshot-mode {
+  background-color: white;
+}
+
+body.screenshot-mode .performance-table {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+body.screenshot-mode header {
+  margin-bottom: 2rem;
+}
+
+/* Hide action buttons in screenshot mode */
+body.screenshot-mode .action-buttons {
+  display: none !important;
+}
